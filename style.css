@@ -1,0 +1,189 @@
+
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #222;
+    background-color: gray;
+
+}
+
+html{
+    font-size: 62.5% ;
+}
+
+.header{
+    height: 90vh;
+    position: relative;
+}
+
+.navbar{
+    height: 110px;
+    outline: 2px;
+    width: 100%;
+    background-color: transparent ;
+    background-size: 100%;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center ;
+    padding: 0 40px;
+    position: fixed;
+
+}
+
+
+.navbar-box{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
+
+.heading-teritary{
+    font-size: 3.5rem
+   
+
+}
+
+.navbar-list{
+    list-style: none;
+    font-size: 2rem;
+    
+
+}
+
+.navbar-items{
+    display: inline-block ;
+    
+}
+
+.navbar-link:hover{
+    background-color: rgb(221, 150, 102);
+    color: white;
+}
+
+.navbar-link:visited,
+.navbar-link:Link{
+    text-decoration: none;
+    color: white;
+    padding: 2rem 3.5rem;
+    border: 1px rgb(118, 114, 250);
+    box-shadow: 0 0 1rem rgba(236, 118, 40, 5);
+    text-shadow: 0 .3rem  1rem ;
+
+}
+
+.navbar-link:visited,
+.navbar-link:link{
+    text-decoration: none;
+    color: white;
+    padding: 3rem;
+    transition: all 2s ease;
+    border:1px solid rgb(0, 21, 255);
+    border-radius: 200px;
+    box-shadow:0 1rem (236, 118, 40, .5);
+    text-shadow: 0 3rem 1rem rgb(225,255,255, .5) ;
+
+}
+
+.navbar-link-book:hover{
+    background-color: rgb(0, 42, 255);
+    color: white;
+}
+
+.toggle{
+    height: 5rem;
+    width: 5rem;
+    display: none;
+}
+
+.toggle div{
+    height: 4px;
+    width: 100%;
+    background-color:white ;
+    margin: 1rem;
+}
+.Header-container{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.Header-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.Heading-primary{
+    font-size: 6.5rem ;
+    font-weight: 600;
+    letter-spacing: 3px;
+
+}
+
+
+.lead{
+    font-size: 1.9rem;
+    font-weight:600 ;
+    letter-spacing: 4px;
+
+}
+
+
+.Book-now:visited,
+.Book-now:link{
+  text-decoration: none;  
+  display: inline block;
+  color: white;
+  font-size: 2rem;
+  margin-top: 4rem;
+  border: 1px solid white;
+
+  border-radius: 100px;
+  transition: all 3s ease;
+  box-shadow: 0 1rem 1rem rgb(55, 132, 240);
+  
+
+
+
+}
+
+.Book-now:hover{
+    background-color: rgb(0, 60, 255);
+    border: 1px solid white;
+    box-shadow: 0 0 2rem rgba(83, 55, 240, 0.8);
+}
+
+
+
+
+
+
+ a:link {
+    font-weight: bold;
+    color:rgb(128, 0, 0);
+    }
+
+    a:visited {
+        color: rgb(224, 192, 255);
+        }
+
+        p:nth-child(1) {
+            font-weight: bold;
+            }
+
+    
+
+           
