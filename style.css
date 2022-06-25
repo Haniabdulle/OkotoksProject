@@ -1,79 +1,337 @@
-body{
-
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: white;
-  background: linear-gradient(rgba(0,0,0,0.95)rgba(0,0,0,0.95)0)rgba(0,0,0,0.38)rgba(0,0,0,0);
-  background-image: url(sushihomepage.webp);
-  background-size: cover;
-
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 
 
-.Container{
-  width:900px;
-  float: right;
-  margin: 10px;
-  border: 1px solid black;
+html {
+  font-size: 62.5%;
 }
 
-.Container ul li{
-  width: 120px;
-  float: left;
-  margin: 10px auto;
-  text-align: center;
+.header {
+  height: 90vh;
+  position: relative;
 }
 
 
 
-
- .Container ul li a{ text-decoration: none;
-  color: darkgray;
-
- }
-
- .Container ul li:hover{ background-color:orange;
-   
- }
-
- .Container ul li a:hover{ color: white;
-
- }
-
- .About{
-   width: 300px; 
-   height: 530px;
-   background-color: black;
-   opacity: 0.9;
-   padding: 55px;
-
- }
-
- .About{
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 100px;
-
-
- }
-
- .About h4{
-   text-align: justify;
-   font-weight: normal;
- }
-
-.About h2{
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: normal;
-  margin: 40px auto;
-}
-
-.opt form , input [type=button]{
+.navbar {
+  height: 110px;
+  width: 100%;
   background-color: black;
-  color: white;
-  padding: 10px; 
-  margin: -14px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 10;
+  position: fixed;
+
 }
 
+.navbar-box{
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+
+
+.Header-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.heading-teritary {
+  font-size: 10.5rem;
+  text-transform: uppercase;
+  text-decoration: solid;
+  color: white;
+}
+
+.navbar-list {
+  list-style: none;
+  font-size: 2rem;
+}
+
+.navbar-items {
+  display: inline-block;
+}
+
+.navbar-link:hover {
+  background-color: rgb(102, 209, 221);
+  color: white;
+}
+
+.navbar-link:visited,
+.navbar-link:Link {
+  text-decoration: none;
+  color: white;
+  padding: 2rem 3.5rem;
+  border: 1px rgb(114, 239, 250);
+  box-shadow: 0 0 1rem rgb(40, 164, 236);
+  text-shadow: 0 0.3rem 1rem;
+}
+
+.navbar-link:visited,
+.navbar-link:link {
+  text-decoration: none;
+  color: white;
+  padding: 3rem;
+  transition: all 2s ease;
+  border: 1px solid rgb(0, 187, 255);
+  border-radius: 200px;
+  box-shadow: 0 1rem 236, 118, 40, 0.5;
+  text-shadow: 0 3rem 1rem rgba(225, 255, 255, 0.5);
+}
+
+.navbar-link-book:hover {
+  background-color: rgb(51, 255, 0);
+  color: white;
+}
+
+.Toggle {
+  height: 5rem;
+  width: 5rem;
+  display: none;
+}
+
+.Toggle div {
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  margin: 1rem;
+}
+
+
+.header{
+background-image: url(Homepageimg.jpg);
+background-size: cover;
+background-position:right ;
+}
+
+
+
+
+.Heading-primary {
+  font-size: 6.5rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+#Restaurent {
+  color: rgb(0, 102, 255);
+  font-weight: 800;
+  font-size: 8rem;
+}
+
+.lead {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.Book-now:visited,
+.Book-now:link {
+  text-decoration: none;
+  display: inline block;
+  color: white;
+  font-size: 2rem;
+  margin-top: 4rem;
+  border: 1px solid white;
+  border-radius: 100px;
+  transition: all 3s ease;
+  box-shadow: 0 1rem 1rem rgb(55, 231, 240);
+  text-shadow: 0 1rem 1rem rgb(0, 0, 0);
+}
+
+.Menu {
+  width: 100%;
+  padding: 10rem 5rem;
+  background-image: linear-gradient(to right bottom, rgb(24, 117, 133), rgb(94, 225, 0));
+} 
+
+.Book-now:hover {
+  background-color: rgb(0, 255, 247);
+  border: 1px solid white;
+  box-shadow: 0 0 2rem rgba(55, 237, 240, 0.907);
+}
+
+
+
+.Menu-heading {
+  font-size: 12rem;
+  text-align: center;
+  text-shadow: 0 0 1rem rgb(0, 0, 0);
+  text-transform: uppercase;
+  color: white;
+  font-weight: 800;
+}
+.Menu-grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  justify-self: center;
+  grid-gap: 2rem;
+}
+
+
+.heading-secondary {
+  font-size: 7rem;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+.menu-img {
+  height: 50%;
+  width: 100%;
+  background-position: left;
+  background-image: url(FriedChicken.webp);
+  background-size: cover; }
+
+
+
+
+.menu-container {
+  width: 100%;
+  height: 50rem;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 2rem rgb(0, 0, 0);
+  transition: all 0.4s ease;
+}
+
+.menu-container:hover {
+  box-shadow: 0 0 5rem rgb(0, 0, 0);
+  transform: scale(1.07);
+}
+
+
+.Menu-p {
+  font-size: 1.4rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.Menu-title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.price {
+  font-size: 3rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: #da6;
+  text-shadow: 0 0.4rem 2rem rgb(0, 0, 0);
+}
+
+.h3:active {
+  color: green;
+}
+
+a:link {
+  font-weight: bold;
+  color: rgb(0, 128, 19);
+}
+
+a:visited {
+  color: rgb(192, 255, 237);
+}
+
+/* CONTACT FORM */
+
+.contact{
+  padding: 15rem 10rem;
+  width: 100%;
+  background-image:url(image1.jpeg) ;
+background-size: cover;
+
+}
+
+.contact-content{ height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 3rem rgba(0,0,0,0.9);
+
+}
+
+.left{
+  background-color: white;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+}
+
+.right{
+  background-color: rgb(35, 140, 178);
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+
+}
+
+.right-img{
+  height:22rem;
+  width: 22rem;
+  position: absolute;
+  top:-11rem;
+  left: -11rem;
+
+}
+
+.contact-form{
+  padding: 5rem;
+  width: 100px;
+
+}
+
+
+.form{
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0; 
+
+}
+
+.form-group{
+  position: relative;
+  padding: 2rem;
+  width: 100% ;
+}
+
+.contact-heading{
+  font-size: 6rem;
+  color: aqua;
+}
+
+.contact-btn:link,
+.contact-btn:visited{
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid aqua;
+  background-color: transparent;
+  color: aqua;
+  outline: none;
+  font-size: 3rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 1rem rgb(0, 0, 0, .4) ;
+  transition: All .4s ease ;
+
+
+}
            
